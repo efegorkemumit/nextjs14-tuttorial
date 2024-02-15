@@ -7,13 +7,11 @@ import Link from 'next/link'; // Next.js sayfalar arası gezinme için Link bile
 export default function Home() {
   return (
    <>
-   <Header/> {/* Sayfa başlığı için Header bileşenini çağırıyoruz. */}
    
    <div className="bg-red-600 text-4xl">
     Youtube Efe Görkem Ümit Abone Ol {/* Ana sayfa başlığı */}
    </div>
 
-   <Footer/> {/* Sayfa alt kısmı için Footer bileşenini çağırıyoruz. */}
    </>
   );
 }
