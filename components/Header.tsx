@@ -1,13 +1,16 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
+import { usePathname, useRouter } from 'next/navigation'
+import React from 'react' // useRouter hook'unu içe aktarıyoruz
+
 
 // Header bileşeni
 const Header = () => {
     // Mevcut sayfanın yolunu almak için usePathname hook'unu kullanıyoruz
     const pathname = usePathname()
+    // useRouter hook'unu kullanarak router nesnesini alıyoruz
+    const router = useRouter();
 
     return (
         <div className='flex justify-between items-center'>
@@ -35,6 +38,15 @@ const Header = () => {
                     <Link className={`p-3 ${pathname === "/contact" ? "underline" : ""}`} href="/contact"> Contact</Link>
                     {/* Mevcut sayfa yolu '/contact' ise, bağlantı altı çizili olacak */}
                 </p>
+
+                    {/* Button bileşeni */}
+
+                <button className='p-3 bg-cyan-800
+                 hover:bg-cyan-950 shadow-lg rounded-lg transition text-white'
+                  type="button" onClick={() => router.push('/auth/login')}>
+                        Login
+                </button>
+
             </div>
         </div>
     )
