@@ -6,6 +6,7 @@ import Footer from "@/components/Footer"; // Footer bileşenini içe aktarıyoru
 import Header from "@/components/Header"; // Header bileşenini içe aktarıyoruz.
 import Hero from "@/components/Hero";
 import LoginButton from "@/components/LoginButton";
+import { Button } from "@/components/ui/button";
 import Link from 'next/link'; // Next.js sayfalar arası gezinme için Link bileşenini içe aktarıyoruz.
 import { usePathname, useRouter } from 'next/navigation'
 
@@ -34,6 +35,10 @@ export default function Home() {
             >
                 Test Button bu ya {/* Buton içeriği */}
             </LoginButton>
+
+
+
+            <Button variant="mybutton" size="sm">Button</Button>
    </>
   );
 }
