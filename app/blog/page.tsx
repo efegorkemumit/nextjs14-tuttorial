@@ -27,6 +27,7 @@ const BlogPage = () => {
             key={post.id} // Her bir gönderinin benzersiz bir anahtarı olmalı
             description={post.content} // Gönderi içeriği
             title={post.title} // Gönderi başlığı
+            id={post.id}
           />
         ))}
       </div>
