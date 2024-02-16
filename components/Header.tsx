@@ -13,7 +13,7 @@ const Header = () => {
     const router = useRouter();
 
     return (
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between shadow-lg mb-1 items-center'>
             <div className='ml-5'>
                 logo {/* Buraya logo bileşeninizin eklenmesi gerekiyor */}
             </div>
