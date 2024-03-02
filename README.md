@@ -31,10 +31,10 @@
 ## LINKS
 
 
-Video Tutorial :  
+Video Tutorial :  https://youtu.be/imyp0H_rMBA
 
 
-## 02 MART 2024   16:00 da yayında...
+
 
 
 ## Getting Started
